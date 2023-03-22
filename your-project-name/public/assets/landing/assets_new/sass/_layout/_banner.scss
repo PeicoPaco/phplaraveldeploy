@@ -1,0 +1,342 @@
+.banner-section {
+	position: relative;
+	overflow: hidden;
+	padding-top: 123px;
+	.container {
+		position: relative;
+		z-index: 9;
+		@include breakpoint(max-xxl) {
+			@include breakpoint(xl) {
+				max-width: 1140px;
+			}
+		}
+	}
+	&::before {
+		position: absolute;
+		inset: 0;
+		content: "";
+		background: linear-gradient(
+			180deg,
+			rgba(var(--base-14-rgb), 0.33) 0%,
+			rgba(#fcfcfc, 0.31) 100%
+		);
+	}
+	.shape-3,
+	.shape-1 {
+		position: absolute;
+		top: 120px;
+		// inset-inline-start: calc(50% + 34vw);
+		inset-inline-start: calc(50% + 408px);
+		animation: pulse 2s alternate infinite;
+	}
+	.shape-2 {
+		position: absolute;
+		bottom: 220px;
+		// inset-inline-start: calc(50% + 34vw);
+		inset-inline-start: calc(50% + 448px);
+		animation: pulse 2s alternate-reverse infinite;
+	}
+	.shape-3 {
+		bottom: 60px;
+		top: unset;
+	}
+	.glass-1 {
+		position: absolute;
+		inset-inline-end: 0;
+	}
+	.glass-2 {
+		position: absolute;
+		inset-inline-end: 0;
+		bottom: 0;
+	}
+	.glass-3 {
+		position: absolute;
+		bottom: 0;
+		inset-inline-start: calc(50% + 52px);
+	}
+	@include breakpoint(xl) {
+		.shape-1,
+		.shape-3 {
+			inset-inline-start: calc(50% + 548px);
+		}
+		.shape-2 {
+			inset-inline-start: calc(50% + 648px);
+		}
+	}
+	@include breakpoint(2xl) {
+		.shape-1,
+		.shape-3 {
+			inset-inline-start: calc(50% + 548px + 7vw);
+		}
+		.shape-3 {
+			inset-inline-start: calc(50% + 588px + 7vw);
+		}
+		.shape-2 {
+			inset-inline-start: calc(50% + 700px + 7vw);
+		}
+		.glass-3 {
+			inset-inline-start: calc(50% + 10px);
+		}
+	}
+	@include breakpoint(max-sm) {
+		padding-top: 90px;
+	}
+}
+.banner-wrapper {
+	display: flex;
+	.banner-thumb {
+		width: 535px;
+		position: relative;
+		.main-img {
+			width: 100%;
+		}
+		div[class*="img-data"] {
+			position: absolute;
+			filter: drop-shadow(0px 4px 43px rgba(0, 0, 0, 0.25));
+			background: linear-gradient(
+				90deg,
+				var(--base-1) 0%,
+				var(--base-4) 100%
+			);
+		}
+		.img-data-1 {
+			top: 80px;
+			inset-inline-end: -21px;
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 19px;
+			letter-spacing: 0.20000000298023224px;
+			color: var(--white);
+			padding: 9px 20px 9px 0;
+			border-radius: 11px;
+			animation: banner-1 2s alternate infinite;
+		}
+		.img-data-2 {
+			font-size: 10px;
+			line-height: 11px;
+			top: 197px;
+			inset-inline-start: -21px;
+			letter-spacing: 0.20000000298023224px;
+			color: var(--white);
+			border-radius: 11px;
+			padding: 12px 12px 11px 42px;
+			animation: banner-2 2s alternate infinite;
+			img {
+				position: absolute;
+				bottom: 0;
+				inset-inline-start: 0;
+			}
+		}
+		.img-data-3 {
+			inset-inline-start: -80px;
+			bottom: 38px;
+			font-size: 23px;
+			font-weight: 500;
+			line-height: 27px;
+			letter-spacing: 0.20000000298023224px;
+			color: var(--white);
+			padding: 26px 26px 26px 85px;
+			border-radius: 11px;
+			animation: banner-1 2s alternate-reverse infinite;
+			img {
+				position: absolute;
+				bottom: 0;
+				inset-inline-start: 0;
+			}
+		}
+		@include breakpoint(max-xl) {
+			@include breakpoint(lg) {
+				.img-data-3 {
+					inset-inline-start: -30px;
+					font-size: 16px;
+					padding: 16px 16px 16px 75px;
+					img {
+						width: 75px;
+					}
+				}
+				.img-data-1 {
+					inset-inline-end: 0px;
+					font-size: 12px;
+					padding: 9px;
+					padding-inline-start: 5px;
+					img {
+						width: 40px;
+					}
+				}
+			}
+		}
+	}
+	.banner-content {
+		width: 532px;
+		flex-grow: 1;
+		margin-top: auto;
+		padding-bottom: 55px;
+		text-align: center;
+		.title {
+			font-size: 42px;
+			line-height: 58px;
+			color: var(--base-1);
+			margin-bottom: 15px;
+			span {
+				font-size: 59px;
+				color: var(--base-3);
+			}
+		}
+		.subtitle {
+			font-size: 35px;
+			font-weight: 400;
+			color: rgba(var(--base-1-rgb), 0.6);
+		}
+		.name {
+			letter-spacing: 0.2px;
+			background: linear-gradient(
+				90.07deg,
+				var(--base-1) -2.32%,
+				var(--base-2) 99.95%
+			);
+			display: inline-block;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			font-size: 75px;
+			line-height: 1;
+			margin-top: 49px;
+			margin-bottom: 58px;
+		}
+		.txt {
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 26px;
+			color: var(--base-1);
+		}
+		.btn-base {
+			margin-top: 27px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		@include breakpoint(lg) {
+			.banner-content {
+				width: 400px;
+				.title {
+					font-size: 32px;
+					line-height: 1.3;
+					span {
+						font-size: 40px;
+					}
+				}
+				.subtitle {
+					font-size: 26px;
+				}
+				.name {
+					margin-top: 35px;
+					font-size: 55px;
+					margin-bottom: 35px;
+				}
+				.txt {
+					font-size: 20px;
+				}
+			}
+			.banner-thumb {
+				width: 400px;
+				flex-grow: 0;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		flex-wrap: wrap-reverse;
+		.banner-content {
+			width: 100%;
+			padding-bottom: 10px;
+		}
+		.banner-thumb {
+			width: 400px;
+			margin: 0 auto;
+		}
+	}
+	@include breakpoint(max-md) {
+		.banner-content {
+			.title {
+				font-size: 32px;
+				line-height: 1.3;
+				span {
+					font-size: 40px;
+				}
+			}
+			.subtitle {
+				font-size: 26px;
+			}
+			.name {
+				margin-top: 35px;
+				font-size: 55px;
+				margin-bottom: 35px;
+			}
+			.txt {
+				font-size: 20px;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.banner-content {
+			.title {
+				font-size: 30px;
+				margin-bottom: 10px;
+				span {
+					font-size: 38px;
+				}
+			}
+			.subtitle {
+				font-size: 22px;
+			}
+			.name {
+				margin-top: 35px;
+				font-size: 50px;
+				margin-bottom: 30px;
+			}
+			.txt {
+				font-size: 18px;
+				font-weight: 500;
+			}
+		}
+		.banner-thumb {
+			.img-data-3 {
+				inset-inline-start: 30px;
+				font-size: 16px;
+				padding: 10px 16px 10px 75px;
+				font-size: 12px;
+				bottom: 0;
+				img {
+					width: 75px;
+				}
+			}
+			.img-data-2 {
+				inset-inline-start: 0;
+			}
+			.img-data-1 {
+				inset-inline-end: 0px;
+				font-size: 12px;
+				padding: 9px;
+				padding-inline-start: 5px;
+				img {
+					width: 40px;
+				}
+			}
+		}
+	}
+}
+@keyframes banner-1 {
+	0% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+@keyframes banner-2 {
+	0% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(-10px);
+	}
+}
