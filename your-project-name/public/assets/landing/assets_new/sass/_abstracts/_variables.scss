@@ -1,0 +1,254 @@
+$bootstrap-sass-asset-helper: false !default;
+:root {
+    --base-1: #fb5607;
+    --base-1-rgb: 251, 86, 7;
+    //
+    --base-2: #ffbe0b;
+    //
+    --base-3: #763100;
+    //
+    --base-4: #ff006e;
+    //
+    --base-5: #ffaf41;
+    //
+    --base-6: #ffb243;
+    //
+    --base-7: #ff7207;
+    //
+    --base-8: #ef7822;
+    --base-8-rgb: 239, 120, 34;
+    //
+    --base-9: #ffbf9d;
+    //
+    --base-10: #fcb373;
+    //
+    --base-11: #f29c8a;
+    //
+    --base-12: #8c3e0d;
+    //
+    --base-13: #ffbd3c;
+    //
+    --base-14-rgb: 255, 217, 190;
+    //
+    --base-15: #f06b0b;
+    --base-15-rgb: 240, 107, 11;
+    //
+    --radial-bg: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(255, 189, 60, 0.3) 0%,
+        rgba(217, 217, 217, 0) 100%
+    );
+    //
+    --body-clr: #4b5d68;
+    --light-clr: #ded6ff;
+    --title-clr: #37322c;
+    --body-bg: #fcfcfc;
+    --section-bg: #ffffff;
+    --section-light: #f3f9ff;
+    --dark-clr: #00447a;
+    --dark-rgb: 0, 68, 122;
+    --white-clr: #ffffff;
+    --white: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --primary-clr: #0c67a3;
+    --primary-rgb: 12, 103, 163;
+    --border: #e5e5e5;
+    --border-light: #e5e5e5;
+    --border-light-only: #e5e5e5;
+    --border-dark: #302474;
+    --border-dark-only: transparent;
+
+    --heading-fonts: "Rubik", sans-serif;
+    --body-fonts: "Rubik", sans-serif;
+    --base-shadow-sm: 0 0 1px var(--base-clr), 0 0 3px var(--base-clr);
+    --base-shadow: 0 0 1px var(--base-clr), 0 0 2px var(--base-clr),
+        0 0 3px var(--base-clr), 0 0 5px var(--base-clr),
+        0 0 7px var(--base-clr);
+    --shadow: 0 0 5px rgba(var(--title-rgb), 0.2);
+}
+
+*[stroke="#FB5607"] {
+    stroke: var(--base-1);
+}
+*[fill="#FB5607"] {
+    fill: var(--base-1);
+}
+*[stop-color="#FB5607"] {
+    stop-color: var(--base-1);
+}
+*[stroke="#ffbe0b"] {
+    stroke: var(--base-2);
+}
+*[fill="#ffbe0b"] {
+    fill: var(--base-2);
+}
+*[stop-color="#ffbe0b"] {
+    stop-color: var(--base-2);
+}
+*[stroke="#763100"] {
+    stroke: var(--base-3);
+}
+*[fill="#763100"] {
+    fill: var(--base-3);
+}
+*[stop-color="#763100"] {
+    stop-color: var(--base-3);
+}
+*[stroke="#ff006e"] {
+    stroke: var(--base-4);
+}
+*[fill="#ff006e"] {
+    fill: var(--base-4);
+}
+*[stop-color="#ff006e"] {
+    stop-color: var(--base-4);
+}
+*[stroke="#ffaf41"] {
+    stroke: var(--base-5);
+}
+*[fill="#ffaf41"] {
+    fill: var(--base-5);
+}
+*[stop-color="#ffaf41"] {
+    stop-color: var(--base-5);
+}
+*[stroke="#ffb243"] {
+    stroke: var(--base-6);
+}
+*[fill="#ffb243"] {
+    fill: var(--base-6);
+}
+*[stop-color="#ffb243"] {
+    stop-color: var(--base-6);
+}
+*[stroke="#ff7207"] {
+    stroke: var(--base-7);
+}
+*[fill="#ff7207"] {
+    fill: var(--base-7);
+}
+*[stop-color="#ff7207"] {
+    stop-color: var(--base-7);
+}
+*[stroke="#ef7822"] {
+    stroke: var(--base-8);
+}
+*[fill="#ef7822"] {
+    fill: var(--base-8);
+}
+*[stop-color="#ef7822"] {
+    stop-color: var(--base-8);
+}
+*[stroke="#FFBF9D"] {
+    stroke: var(--base-9);
+}
+*[fill="#FFBF9D"] {
+    fill: var(--base-9);
+}
+*[stop-color="#FFBF9D"] {
+    stop-color: var(--base-9);
+}
+*[stroke="#FCB373"] {
+    stroke: var(--base-10);
+}
+*[fill="#FCB373"] {
+    fill: var(--base-10);
+}
+*[stop-color="#FCB373"] {
+    stop-color: var(--base-10);
+}
+*[stroke="#F29C8A"] {
+    stroke: var(--base-11);
+}
+*[fill="#F29C8A"] {
+    fill: var(--base-11);
+}
+*[stop-color="#F29C8A"] {
+    stop-color: var(--base-11);
+}
+*[stroke="#8C3E0D"] {
+    stroke: var(--base-12);
+}
+*[fill="#8C3E0D"] {
+    fill: var(--base-12);
+}
+*[stop-color="#8C3E0D"] {
+    stop-color: var(--base-12);
+}
+*[stroke="#FFBD3C"] {
+    stroke: var(--base-13);
+}
+*[fill="#FFBD3C"] {
+    fill: var(--base-13);
+}
+*[stop-color="#FFBD3C"] {
+    stop-color: var(--base-13);
+}
+
+.btn-base {
+    text-decoration: none;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    i,
+    svg {
+        margin-inline-start: 10px;
+    }
+    &::before,
+    &::after {
+        background: linear-gradient(
+            90.07deg,
+            var(--base-2) -2.32%,
+            var(--base-1) 99.95%
+        );
+        content: "";
+        position: absolute;
+        inset: 0;
+        transition: all ease 0.4s;
+        border-radius: 10px;
+    }
+    * {
+        position: relative;
+        z-index: 1;
+        color: var(--white);
+    }
+    &::after {
+        opacity: 0.8;
+    }
+    &::before {
+        inset: 1px;
+        z-index: 1;
+        // opacity: 0;
+        background: linear-gradient(
+            90.07deg,
+            var(--base-1) -2.32%,
+            var(--base-2) 99.95%
+        );
+    }
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+        &::before {
+            opacity: 0;
+        }
+    }
+    &.btn-sm {
+        font-weight: 400;
+        padding: 6px 15px;
+    }
+}
+@include breakpoint(xl) {
+    .container {
+        max-width: 1200px;
+    }
+}
